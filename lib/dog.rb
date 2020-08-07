@@ -16,7 +16,7 @@ class Dog
 
   def self.print_all
     # puts @@all.map(&:name) - another way to solve, but more complex than needed for this example
-    puts @@all.map{ |dog| dog.name }
+    puts @@all.collect{ |dog| dog.name }
   end
 
   def self.clear_all
@@ -27,3 +27,4 @@ class Dog
     @@all << self
   end
 end
+
